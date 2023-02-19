@@ -15,7 +15,7 @@ Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de i
 CSS
 
 ### Labo 4
-Fundamentos de JavaScript
+Fundamentos de Javascript
 
 [^1]: Profesores: Eduardo Daniel Juárez Pineda, Ricardo Cortés Espinosa <br>
       4to semestre FJ2023
