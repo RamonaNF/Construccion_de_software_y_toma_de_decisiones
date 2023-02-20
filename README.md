@@ -3,8 +3,8 @@
 Ing. en Tecnologías Computacionales <br>
 TC2005B Construcción de software y toma de decisiones [^1]
 
-## Trabajo grupal
-Natgas: Proyecto [Onyx](https://github.com/RodrigoTeran/natgas)
+## Trabajo grupal: [GitWise](https://github.com/RodrigoTeran/natgas)
+Natgas: Proyecto Onyx
 
 ## Trabajo individual
 
@@ -16,6 +16,9 @@ CSS
 
 ### Labo 4
 Fundamentos de Javascript
+
+### Labo 5
+Frameworks de estilo
 
 [^1]: Profesores: Eduardo Daniel Juárez Pineda, Ricardo Cortés Espinosa <br>
       4to semestre FJ2023
