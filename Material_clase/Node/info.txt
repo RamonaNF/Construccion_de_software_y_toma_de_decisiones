@@ -1,0 +1,21 @@
+              request
+          --- HTTP GET ---> 
+ Compu                       Servidor
+       <--- HTTP Response ---
+          HTML (static/body)
+
+
+
+
+ANÁLISIS ¿Qué?
+ ||
+|__| Saludar
+
+
+DISEÑO ¿Cómo?
+              request             ______
+          --- HTTP GET --->      |Server|
+ ||                                 |-> listen(port)
+|__| Saludar
+       <--- HTTP Response ---
+          HTML (static/body)
