@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"> </script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"> </script>
+
+        <link rel="stylesheet" href="styles.min.css">
+
+        <title> Progra orientadada a eventos </title>
+    </head>
+    <body>
+        <div class="container">
+            <section> 
+                <div class="row">
+                    <div class="col-lg-8">
+                        <img src="Material/Password.png" width="100%">
+                    </div>
+                    <div class="col-lg-4">
+                        <h2> Password validator </h2> 
+                        <form>
+                            <label> Ingresar password </label>
+                            <input type="password" placeholder="Password" id="passwrd" required onkeyup="validate()"> <br> <br> <!-- minlength="6" maxlength="10" -->
+        
+                            <label> Confirmar password </label>
+                            <input type="password" placeholder="Confirmar password" id="passwrdConf" required onkeyup="validate()"> <br> <br>
+        
+                            <div id="alertMsg"> </div>
+        
+                            <button type="submit" id="submitBtn"> Submit </button>
+                        </form>
+                    </div>
+                </div>  
+                
+            </section> 
+            
+            <br>
+
+            <section>
+                <h3 class="page-header"> Q&A </h3>
+
+                <h4> > ¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor? </h4>
+                <p> La validación del lado del cliente es una verificación inicial que mejora tanto la experiencia del usuario como la respuesta del sistema, pues ayuda a garantizar que los datos enviados coinciden con los requisitos establecidos y, en caso de no hacerlo, solicita una corrección inmediata (proceso que tardaría más si la alerta proviene directamente del servidor) </p>
+                <aside>
+                    Referencia
+                    <a href="https://developer.mozilla.org/es/docs/Learn/Forms/Form_validation" target="_blank"> 1 </a>
+                </aside>
+
+                <h4> > ¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript? </h4>
+                <p> Deshabilitando javascript en el navegador o mediante inyección de código </p>
+                <aside>
+                    Referencia
+                    <a href="https://www.clubdelphi.com/foros/showthread.php?t=65438" target="_blank"> 1 </a>
+                </aside>
+
+                <h4> > Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica? </h4>
+                <p> Porque si el usuario no es malicioso, pero cometió algún error al ingresar su información, el alertar el error inmediatamente mejora su experiencia (pues no tiene que esperar a que el servidor rechace sus datos); además, este tipo de validaciones reducen la carga de procesamiento del servidor </p>
+                <aside>
+                    Referencia
+                    <a href="https://uniwebsidad.com/libros/javascript/capitulo-7/validacion" target="_blank"> 1 </a>
+                </aside>
+            </section>
+
+            <br>
+
+            <footer id="footer"> 
+                <p>
+                    Made with <a href="https://code.visualstudio.com/" target="_blank"> Visual Studio Code </a> using <a href="https://getbootstrap.com/" target="_blank"> Bootstrap </a> <br>
+                    Ramona NF© 2023 <a href="mailto: a01423596@tec.mx"> a01423596@tec.mx </a>
+                </p>
+            </footer>
+        </div>
+
+        <script type="text/javascript" src="validator.js"></script>
+    </body>
+</html>
