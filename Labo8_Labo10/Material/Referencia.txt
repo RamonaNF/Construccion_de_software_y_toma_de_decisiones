@@ -1,5 +1,0 @@
-Node
-    https://progressivecoder.com/serve-static-html-files-in-nodejs-without-express/
-    https://stackoverflow.com/questions/47409501/how-do-i-use-fs-readfile-to-read-an-html-file-in-node-js
-    https://flaviocopes.com/how-to-check-if-file-exists-node/
-    https://stackoverflow.com/questions/61394928/get-user-input-through-node-js-console
