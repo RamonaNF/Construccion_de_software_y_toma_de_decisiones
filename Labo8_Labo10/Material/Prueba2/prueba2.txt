@@ -1,5 +1,0 @@
-Holaa?? Funcionaaa??
-Append test
-SCENE 2: Append test
-Changed path -> Well, it worked!!
-Inputs test
