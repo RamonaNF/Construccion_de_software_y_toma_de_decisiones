@@ -1,0 +1,115 @@
+#nav ul {
+    background-color: #000a05;
+    margin: 0;
+    padding: 20px;
+    list-style-type: none;
+    text-align: right;
+}
+
+#nav li {
+    display: inline;
+    padding: 8px;
+}
+
+#nav li a {
+    color: #F5F3F4;
+    text-align: center;
+    text-decoration: none;
+}
+
+#nav li a:hover {
+    background-color: #22a86a;
+    padding: 20px;
+}
+
+body {
+    background-color: #000F08;
+    color: #C3B59F;
+}
+
+body h2 {
+    color: #e2a90d;
+    text-align: center;
+}
+
+body h3 {
+    color: #D56F3E;
+}
+
+body h4 {
+    color: #22a86a;
+}
+
+body h5 {
+    color: #85798f;
+}
+
+body a {
+    text-decoration: none;
+    color: rgb(80, 154, 214);
+}
+
+body a:hover {
+    color: rgb(63, 121, 168);
+}
+
+#intro {
+    background-image: url("Material/Gallery/Sky.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#intro img {
+    padding: 15px;
+}
+
+.twoColDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#timeline img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.innerDiv {
+    text-align: right;
+}
+
+.innerDiv2 {
+    text-align: center;
+}
+
+#innerDiv3 {
+    text-align: right;
+    padding-right: 20px;
+}
+
+table {
+    width: 100%;
+}
+
+footer {
+    background-color: #000a05;
+    text-align: center;
+    padding: 1px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #22a86a;
+}
+
+#footer a:hover {
+    color: #85798f;
+}
+
+/*#questions h3, p {
+    display: inline;
+    vertical-align: top;
+}*/

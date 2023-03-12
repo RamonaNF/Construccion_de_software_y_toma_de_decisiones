@@ -1,0 +1,37 @@
+nav {
+    background-color: black;
+    padding: 10px;
+}
+    
+body {
+    background-color: rgb(31, 33, 34);
+    color: rgb(240, 248, 253);
+}
+
+.darkTxt {
+    color: rgb(31, 33, 34);
+}
+
+li {
+    padding: 7px;
+}
+
+.panelDiv {
+    padding: 5px;
+}
+
+a {
+    color: rgb(164, 141, 248);
+}
+
+a:hover {
+    color: rgb(96, 195, 241);
+}
+
+#buttonsRow {
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+}

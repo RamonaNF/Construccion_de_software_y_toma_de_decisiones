@@ -1,0 +1,1 @@
+Procesar fechas como números, no como strings

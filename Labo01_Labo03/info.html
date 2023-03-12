@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styles.min.css">
+
+        <title> Q&A </title>
+    </head>
+    <body>
+        <nav id="nav">
+            <ul>
+                <li> <a href="index.html"> Home </a> </li>
+                <li> <a href="info.html"> Q&A </a> </li>
+                <li> <a href="contacto.html"> Contacto </a> </li>
+            </ul>
+        </nav>
+
+        <h1> Preguntas y respuestas </h1>
+        
+        <article id="questions">
+            <h2> Labo 1: HTML </h2>
+            
+            <section>
+                <h3> > ¿Cuál es la diferencia entre Internet y la World Wide Web? </h3>
+                <p>
+                    Internet es una red de computadoras conectadas entre sí, mientras que la WWW es una colección de páginas web interconectadas a las que se puede acceder mediante internet
+                </p>
+                <aside>
+                    Referencia
+                    <a href="https://www.bbc.com/mundo/noticias-47538812" target="_blank"> 1 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > ¿Cuáles son las partes de una URL? </h3>
+                <p>
+                    Las partes principales de una URL son las siguientes: <br>
+                    &emsp; &emsp; Esquema: Indica el protocolo que debe usar el navegador para transferir datos (http, https, mailto, ftp, etc) <br>
+                    &emsp; &emsp; Subdominio: (www) <br>
+                    &emsp; &emsp; Dominio: Indica el servidor web que es solicitado mediante un nombre o una IP <br>
+                    Sin embargo, URLs más complejas suelen contener elementos con más información, como los siguientes: <br>
+                    &emsp; &emsp; Puerto: Indica el punto mediante el que se accederá a los recursos del servidor web <br>
+                    &emsp; &emsp; Ruta: Dirección del recurso en el servidor web (viene después de ‘/’) <br>
+                    &emsp; &emsp; Parámetros: Información transmitida mediante el URL (viene después de ‘?’ y, cuando hay varios, están separados por ‘&’) <br>
+                    &emsp; &emsp; Etiqueta: Permite hacer scroll hasta un elemento en concreto (viene después de ‘#’) <br>
+                </p>
+                <aside>
+                    Referencias
+                    <a href="https://developer.mozilla.org/es/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL" target="_blank"> 1 </a>
+                    | <a href="https://edytapukocz.com/url-partes-ejemplos-facil/" target="_blank"> 2 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE? </h3>
+                <p>
+                    Get: Solicitar un recurso del servidor web <br>
+                    Head: Solicitar que el servidor envíe únicamente el encabezado de la respuesta (sin el archivo) <br>
+                    Post: Envía datos a una URL  <br>
+                    Put: Pone un recurso dentro del servidor web en la dirección especificada (en caso de no existir lo crea y en caso de haber algo, lo reemplaza) <br>
+                    Patch: Permite hacer modificaciones parciales a un recurso en específico <br>
+                    Delete: Permite eliminar un recurso de un servidor web <br>
+                </p>
+                <aside>
+                    Referencias
+                    <a href="https://tecsify.com/blog/metodos-http/" target="_blank"> 1 </a>
+                    | <a href="https://pc-solucion.es/tecnologia/diferencias-entre-el-metodo-get-y-post/" target="_blank"> 2 </a>
+                    | <a href="http://notasjs.blogspot.com/2013/07/http-diferencia-entre-post-y-put.html" target="_blank"> 3 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > ¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué? </h3>
+                <p>
+                    Este tipo de formularios pueden ser enviados mediante GET o POST <br>
+                    El más recomendado es este último porque, en lugar de dejar la información ingresada visible en el URL (como es el caso de GET), se incluye dentro del cuerpo de la petición realizada
+                </p>
+                <aside>
+                    Referencia
+                    <a href="https://www.w3schools.com/tags/att_form_method.asp" target="_blank"> 1 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > ¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL? </h3>
+                <p>
+                    GET, ya que este método se utiliza para solicitar un recurso (en este caso una página)
+                </p>
+                <aside>
+                    Referencia
+                    <a href="https://tecsify.com/blog/metodos-http/" target="_blank"> 1 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error? </h3>
+                <p>
+                    Es una respuesta satisfactoria (200 significa OK), indica que la solicitud ha tenido éxito
+                </p>
+                <aside>
+                    Referencia
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Status" target="_blank"> 1 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué? </h3>
+                <p>
+                    404 - Not found <br>
+                    No, ya que este código de error indica un error del cliente y quiere decir que un recurso solicitado no existe o fue removido; sin embargo, se podrían tomar medidas como redirigir al usuario a la página principal
+                </p>
+                <aside>
+                    Referencia
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Status" target="_blank"> 1 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > ¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué? </h3>
+                <p>
+                    500 - Internal Server Error <br>
+                    Sí, porque este error proviene del servidor y no del usuario, por lo que es responsabilidad del desarrollador manejarlo
+                </p>
+                <aside>
+                    Referencia
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTTP/Status" target="_blank"> 1 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados </h3>
+                <p>
+                    Un atributo despreciado/desaprobado está permitido, pero no se recomienda usarlo porque está en proceso de ser reemplazado o eliminado por completo <br>
+                    Algunos ejemplos de esto en HTML5 son applet, basefont, center, dir, font, isindex, menu, s, strike y u
+                </p>
+                <aside>
+                    Referencia
+                    <a href="https://www.geeksforgeeks.org/what-are-the-html-tags-that-deprecated-in-html5/" target="_blank"> 1 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > ¿Cuáles son las diferencias principales entre HTML 4 y HTML5? </h3>
+                <p>
+                    HTML5 tiene más etiquetas que HTML4 <br>
+                    HTML5 puede realizar más cosas de forma nativa que para HTML4, donde se necesitaban de programas externos ya obsoletos <br>
+                    HTML5 es más dinámico y soporta elementos de video y audio de forma nativa <br>
+                    HTML5 tiene compatibilidad con navegadores modernos <br>
+                </p>
+                <aside>
+                    Referencia
+                    <a href="https://kinsta.com/es/blog/html-vs-html5/" target="_blank"> 1 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > ¿Qué componentes de estructura y estilo tiene una tabla? </h3>
+                <p>
+                    Crear tabla: < table > <br>
+                    Cuerpo de la tabla: < tbody > <br>
+                    Celda de cabecera: < th > <br>
+                    Celda: < td > <br>
+                    Fila: < tr > <br>
+                    Referencia a una columna (debe estar en un colgroup): < col > <br>
+                    Definir grupos de columnas: < colgroup > <br>
+                    Leyenda o título de tabla: < caption > <br>
+                    Cabecera de la tabla: < thead > <br>
+                    Pie de la tabla: < tfoot > <br>                  
+                </p>
+                <aside>
+                    Referencia
+                    <a href="https://www.mclibre.org/consultar/htmlcss/html/html-tablas.html" target="_blank"> 1 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > ¿Cuáles son los principales controles de una forma HTML5? </h3>
+                <p>
+                    < form >: Crea un formulario <br>
+                    < input >: Campo de texto simple, no permite salto de línea y puede ser de texto, color... <br>
+                    < button >: Crea un botón que puede ser de diferentes tipos como: submit o reset <br>
+                    < textarea >: Permite escribir varias líneas de texto <br>
+                    < legend >: Crea un título <br>
+                    < fieldset >: Permite organizar en grupos los campos de un formulario <br>                  
+                </p>
+                <aside>
+                    Referencia
+                    <a href="https://developer.mozilla.org/es/docs/Learn/Forms/Basic_native_form_controls" target="_blank"> 1 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > ¿Qué tanto soporte HTML5 tiene el navegador que utilizas? </h3>
+                <p>
+                    Puedes utilizar la siguiente página para descubrirlo: 
+                    <a href="http://html5test.com/" target="_blank"> http://html5test.com/ </a>
+                </p>
+                <aside>
+                    <p> Por ejemplo, en mi caso uso Chrome 110 en Windows 10, un puntaje de 476/555 </p>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > ¿Cuál es el ciclo de vida de los sistemas de información? </h3>
+                <ol>
+                    <li> Planificación: En esta fase se prepara el diseño y posterior implementación del sistema </li>
+                    <li> Análisis: Análisis y donde se busca concretar una serie de requisitos </li>
+                    <li> Diseño: Determinar cómo el nuevo sistema de información cumplirá con los requisitos aplicables </li>
+                    <li> Desarrollo:  El inicio de la producción </li>
+                    <li> Integración y periodo de pruebas: El objetivo de esta etapa es corroborar que el diseño propuesto cumple con los requisitos de negocio establecidos </li>
+                    <li> Implementación: Instalación del hardware y software elegidos, crear las aplicaciones correspondientes, someterlas a pruebas, crear la documentación pertinente y capacitar a los usuarios. sistema </li>
+                    <li> Mantenimiento: Introducir los ajustes necesarios para mejorar el rendimiento y corregir los problemas que puedan surgir </li>
+                </ol>
+                <aside>
+                    Referencia
+                    <a href="https://blog.powerdata.es/el-valor-de-la-gestion-de-datos/ciclo-de-vida-de-un-sistema-de-informacion-fases-y-componentes" target="_blank"> 1 </a>
+                </aside>
+            </section>
+                
+            <section>
+                <h3> > ¿Cuál es el ciclo de desarrollo de sistemas de información? </h3>
+                <ol>
+                    <li> Estudio de viabilidad </li>
+                    <li> Análisis del sistema </li>
+                    <li> Diseño </li>
+                    <li> Codificación </li>
+                    <li> Integración </li>
+                    <li> Pruebas </li>
+                    <li> Implementación </li>
+                    <li> Formación </li>
+                    <li> Mantenimiento y Funcionamiento </li>
+                </ol>
+                <aside>
+                    Referencia
+                    <a href="https://ungoti.com/es/soluciones/desarrollo-de-software/sdlc/" target="_blank"> 1 </a>
+                </aside>
+            </section>
+        </article>
+
+        <article id="questions">
+            <h2> Labo 3: CSS </h2>
+            
+            <section>
+                <h3> > Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS?  </h3>
+                <p>
+                    El uso de !important puede ser útil en situaciones muy particulares, pero no es recomendable porque una vez que se empieza a alterar la jerarquía de css, entre más !important se tengan actualizar el estilo se vuelve cada vez más complejo y confuso
+                </p>
+                <aside>
+                    Referencia
+                    <a href="https://desarrolloweb.com/articulos/declaracion-important-css.html" target="_blank"> 1 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?  </h3>
+                <p>
+                    Cuando elegimos una imagen de fondo en una página, hay que tener en cuenta los colores de los textos y el color de la imagen de fondo, para no dificultar la visualización del contenido
+                </p>
+            </section>
+
+            <section>
+                <h3> > Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de estilo entre %, px y pt?  </h3>
+                <p>
+                    % es recomendable para hacer una página responsiva, donde se requiere más flexibilidad <br>
+                    px para establecer dimensiones, como el de una imagen o contenedor <br>
+                    pt es usado rara vez y se recomienda para propiedades relacionadas a la fuente de un proyecto <br>
+                </p>
+                <aside>
+                    Referencia
+                    <a href="https://www.aluracursos.com/blog/guia-de-unidades-en-css" target="_blank"> 1 </a>
+                </aside>
+            </section>
+
+            <section>
+                <h3> > ¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?  </h3>
+                <p>
+                    Reducir el código CSS mediante la eliminación de espacios innecesarios, líneas en blanco y comentarios, aunque el archivo CSS pierda su estructura y claridad, de esta forma será interpretado por el navegador más rápido
+                </p>
+                <aside>
+                    Referencia
+                    <a href="https://www.ionos.mx/digitalguide/paginas-web/diseno-web/comprimir-css-para-optimizar-los-tiempos-de-carga/" target="_blank"> 1 </a>
+                </aside>
+            </section>
+        </article>
+
+        <footer id="footer"> 
+            <p>
+                Made with <a href="https://code.visualstudio.com/" target="_blank"> Visual Studio Code </a> <br>
+                Ramona NF© 2023 <a href="mailto: a01423596@tec.mx"> a01423596@tec.mx </a>
+            </p>
+        </footer>
+    </body>
+</html>

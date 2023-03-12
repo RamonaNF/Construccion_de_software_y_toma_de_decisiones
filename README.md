@@ -5,20 +5,56 @@ TC2005B Construcción de software y toma de decisiones [^1]
 
 ## Trabajo grupal: [GitWise](https://github.com/RodrigoTeran/natgas)
 Natgas: Proyecto Onyx
+<br> <br>
+<img src="Extras/LightIsologo.png"  height="40px"> 
+<img src="Extras/Natgas.png"  height="40px"> <br>
 
 ## Trabajo individual
 
-### Labo 1
+### Labo 01
 Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información
 
-### Labo 3
+### Labo 03
 CSS
 
-### Labo 4
+### Labo 04
 Fundamentos de Javascript
 
-### Labo 5
+### Labo 05
 Frameworks de estilo
+
+### Labo 06
+Programación orientada a eventos
+
+### Labo 08
+Introducción al back-end
+
+### Labo 09
+Bases de Datos de Escritorio (MS Access)
+
+### Labo 10
+Rutas y formas
+
+### Labo 11
+Express
+
+### Labo 12
+HTML dinámico
+
+### Labo 13
+MVC
+
+### Labo 14
+Manejo de sesiones y cookies
+
+### Labo 15
+Conociendo el ambiente de MariaDB
+
+### Labo 16
+Creación de constraints para instrumentar integridad referencial en MariaDB
+
+### Labo 17
+Interacción con la base de datos
 
 [^1]: Profesores: Eduardo Daniel Juárez Pineda, Ricardo Cortés Espinosa <br>
       4to semestre FJ2023

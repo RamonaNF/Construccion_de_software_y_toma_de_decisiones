@@ -1,0 +1,7 @@
+Prueba 1
+    https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces
+    https://www.techiedelight.com/es/measure-execution-time-method-javascript/
+
+Read
+header table 
+https://www.w3schools.com/jsref/met_table_createthead.asp
