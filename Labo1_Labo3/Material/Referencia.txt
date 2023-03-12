@@ -1,6 +1,0 @@
-CSS
-    https://www.w3schools.com/css/default.asp
-    https://www.geeksforgeeks.org/how-to-insert-spaces-tabs-in-text-using-html-css/
-
-Read
-https://dev.to/sanchithasr/how-to-overlay-icons-on-top-of-images-with-css-1kb9#:~:text=How%20to%20Overlay%20Icons%20on%20Top%20of%20Images,the%20icons%20accordingly%20using%20the%20other%20CSS%20properties
