@@ -50,7 +50,7 @@ exports.getInfo = (request, response, next) => {
                     </aside>  
                   </section>
 
-                  <h2> Labo 13: MVC </h2>
+                  <h2> Labo 13: MVC | Labo 14: Manejo de sesiones y cookies </h2>
                   
                   <section>
                     <h3> > ¿Qué beneficios encuentras en el estilo MVC? </h3>
@@ -82,6 +82,30 @@ exports.getInfo = (request, response, next) => {
                     <aside>
                       Referencia
                       <a href="http://catarina.udlap.mx/u_dl_a/tales/documentos/lis/rivera_l_a/capitulo2.pdf" target="_blank"> 1 </a>
+                    </aside>  
+                  </section>
+
+                  <h2> Labo 17: Interacción con la base de datos </h2>
+
+                  <section>
+                    <h3> > ¿Qué ventajas tiene escribir el código SQL únicamente en la capa del modelo? </h3>
+                    <p>
+                    </p>
+  
+                    <aside>
+                      Referencia
+                      <a href="" target="_blank"> 1 </a>
+                    </aside>  
+                  </section>
+
+                  <section>
+                    <h3> > ¿Qué es SQL injection y cómo se puede prevenir? </h3>
+                    <p>
+                    </p>
+  
+                    <aside>
+                      Referencia
+                      <a href="" target="_blank"> 1 </a>
                     </aside>  
                   </section>
                  `;

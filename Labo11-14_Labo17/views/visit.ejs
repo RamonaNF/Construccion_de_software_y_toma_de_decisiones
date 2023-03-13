@@ -39,12 +39,40 @@
                         </div>
                 <% } %>
             <% }else { %>
+                <br> <br>
                 <div class="alert alert-danger alert-dismissible fade in">
                     <a class="close" data-dismiss="alert"> &times; </a>
                     <strong> ATENCIÓN </strong> 
                     <br> <p> No hay visitantes registrados </p> 
                 </div>
             <% } %>
+        </div>
+
+        <div class="container">
+            <br> <br>
+            <% if(visitant === ''){ %>
+                <div class="alert alert-warning alert-dismissible fade in">
+                    <a class="close" data-dismiss="alert"> &times; </a>
+                    <strong> ATENCIÓN </strong> 
+                    <br> <p> No hay visitantes registrados </p> 
+                </div>
+            <% } else { %>
+                <div class="alert alert-success alert-dismissible fade in">
+                    <a class="close" data-dismiss="alert"> &times; </a>
+                    <strong> VISITANTES </strong> 
+                    <br> <p> <%= visitant %>, último visitante registrado </p> 
+                </div>
+            <% } %>
+
+            <div class="alert alert-info alert-dismissible fade in">
+                <a class="close" data-dismiss="alert"> &times; </a>
+                <strong> INFO </strong>
+                    <% if(visits === ''){ %>
+                        <br> <p> Consultas: 0 </p> 
+                    <% } else { %>
+                        <br> <p> Consultas: <%= visits %> </p> 
+                    <% } %> 
+            </div>
         </div>
 
         <%- include('includes/foot.ejs') %>

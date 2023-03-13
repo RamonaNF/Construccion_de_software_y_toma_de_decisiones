@@ -25,12 +25,19 @@ const express = require('express');
     // COMPOSITE: Middleware sucesivos hasta llegar a la hoja
 const bodyParser = require('body-parser');
 const path = require('path'); // Armar la ruta de acuerdo con el OS en el que corre el programa
+const session = require('express-session');
 
 const port = 3000;
 const app = express(); // constructor === http.createServer((request, response) => {});
 
                        // app.use((request, response, next) => {
                        // });
+
+app.use( session( {
+    secret: 'mi string secreto que debe ser un string aleatorio muy largo, no como éste', 
+    resave: false, //La sesión no se guardará en cada petición, sino sólo se guardará si algo cambió 
+    saveUninitialized: false, //Asegura que no se guarde una sesión para una petición que no lo necesita
+}));
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: false}));
