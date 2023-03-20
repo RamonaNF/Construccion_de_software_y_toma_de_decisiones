@@ -56,5 +56,14 @@ Creación de constraints para instrumentar integridad referencial en MariaDB
 ### Labo 17
 Interacción con la base de datos
 
+### Labo 18
+Autentificación
+
+### Labo 19
+Control de acceso basado en roles 
+
+### Labo 20
+Consultas en SQL
+
 [^1]: Profesores: Eduardo Daniel Juárez Pineda, Ricardo Cortés Espinosa <br>
       4to semestre FJ2023
