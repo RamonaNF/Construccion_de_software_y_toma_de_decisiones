@@ -1,0 +1,43 @@
+TRABAJANDO CON RAMAS
+    git checkout 
+        cambiar rama
+
+    git checkout -b "nombre"
+        cambiar a la nueva rama
+
+    git branch -D /nombreBranch
+
+SUBIR CAMBIOS
+    git add -A 
+        agrega cambios a la transacción
+
+    git commit -m "mensaje descriptivo en imperativo"
+
+    git push _ origin /nombreBranch _
+
+    TRABAJANDO CON LA VERSIÓN MÁS RECIENTE: git pull
+
+    JUNTAR RAMAS: te mueves a la que le quieres añadir
+        (normalmente main) git merge /nombreBranch
+
+---
+
+Programación procedural
+Programación Orientada a Objetos
+Programación orientada a eventos -> funciones esperando a ser detonadas
+
+Document
+Object
+Model -> Objeto que actúa como interfaz
+
+W3C -> Estandar desarrollo web
+
+---
+> Desde la consola puede ser modificado
+> Seleccionar convención de código
+
+DISEÑO DE LA INTREFAZ
+Wireframe (alta y baja fidelidad)
+Desktop research
+Brainstorming
+Librería de patrones

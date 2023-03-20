@@ -1,0 +1,17 @@
+REGISTRAR PERRO 
+    Click en registrar perro
+    Sistema despliega forma
+    Ingresa datos y click en registrar
+    Guarda datos y muestra lista de datos
+
+                    Perros
+                    router
+  ||   -------->      |
+|____|   GET          Perros     ------>
+        perros        controller   routes
+        /nuevo          
+        <-------------------------------------
+                      HTML
+
+        ------->
+          POST

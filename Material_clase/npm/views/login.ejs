@@ -1,0 +1,28 @@
+<%- include('includes/head.ejs') %> 
+
+<br>
+<h1 class="title"> LogIn </h1>
+
+<% if(mensaje != '') { %>
+    <div class="notification is-link is-light">
+        <%= mensaje %>
+    </div>
+<% } %>
+
+<form action="/usuarios/login" method="POST">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>" >
+
+    <label for="user">Username</label>
+    <input name="user" id="user" class="input is-rounded" type="text" placeholder="user" required>
+
+    <br> <br>
+    <label for="password">Password</label>
+    <input name="password" id="password" class="input is-rounded" type="text" placeholder="password" required>
+    
+    <br> <br>
+    <input class="button is-rounded is-success" type="submit" value="LogIn">
+</form>
+
+<br>
+
+<%- include('includes/foot.ejs') %>

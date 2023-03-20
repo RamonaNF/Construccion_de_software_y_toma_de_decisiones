@@ -5,12 +5,33 @@
           HTML (static/body)
 
 
-
+DIAGRAMA DE SECUENCIA
 
 ANÁLISIS ¿Qué?
  ||
 |__| Saludar
 
+
+DISEÑO ¿Cómo?
+              request             ______
+          --- HTTP GET --->      |Server|
+ ||                                 |-> listen(port)
+|__| Saludar
+       <--- HTTP Response ---
+          HTML (static/body)
+
+
+
+
+DIAGRAMA DE SECUENCIA
+
+ANÁLISIS ¿Qué?
+ ||
+|__| Ordenar chilaquiles
+        1. Usuario entra al sistema 
+        2. Sistema despliega opciones de chilaquiles
+        3. Usuario ingresa opciones
+        4. Sistema entrega chilaquiles
 
 DISEÑO ¿Cómo?
               request             ______

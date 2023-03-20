@@ -1,0 +1,14 @@
+body {
+    color: darkslateblue;
+}
+.rojo {
+    color: red;
+}
+
+.rojo:hover { 
+    color: tomato;
+}
+
+#precio_verde {
+    color: green;
+}

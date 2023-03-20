@@ -1,0 +1,5 @@
+  ______
+ |Perros|
+    id     INT          A_I
+    Nombre varchar(80)
+    TIMESTAMP current times

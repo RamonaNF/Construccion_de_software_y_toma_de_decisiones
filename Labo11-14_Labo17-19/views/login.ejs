@@ -1,0 +1,32 @@
+<%- include('includes/head.ejs') %>
+
+    <title> Log In </title>
+</head>
+<body>
+    <% if (mensaje != '') { %>
+        <br>
+        <div class="alert alert-danger alert-dismissible fade in">
+            <a class="close" data-dismiss="alert"> &times; </a>
+            <strong> ERROR </strong>
+            <p> <%= mensaje %> </p>
+        </div>
+        <br>
+    <% } %>
+
+    <form action='/login' method='POST'>
+        <fieldset>
+            <div> 
+                <legend> Username </legend>
+                <input type = 'text' name='user' required>
+            </div>
+            <br>
+            <div> 
+                <legend> Password </legend>
+                <input type = 'password' name='password' required>
+            </div>
+            <br>
+            <input type='submit' value='Entrar >'>
+        </fieldset>
+    </form>
+
+<%- include('includes/foot.ejs') %>
