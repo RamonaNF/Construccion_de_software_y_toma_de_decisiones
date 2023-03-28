@@ -1,0 +1,82 @@
+<%- include('includes/head.ejs') %>
+
+    <title> Log In </title>
+</head>
+
+        <title> Express </title>
+    </head>
+    <body>
+        <section>
+            <h1> Gallery </h1>
+            <h3> Visitantes </h3>
+            <form action="/gallery" method="POST" enctype="multipart/form-data"> 
+                <label for="imagen"></label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+
+                <br>
+                <input type="submit" name="subir" value="Subir imagen">
+            </form>
+
+            <br>
+            <% if(images.length > 0) { %>
+                <article style="display:flex; overflow-x: scroll; height: 120px;">
+                <% images.forEach((image) => { %>
+                    <img src="uploads/<%= image.img%>" height="100px" alt="<%= image.img%>">
+                <% }) %>
+            <% } else { %>
+                <article>
+                    <p> ¿Serás el primer usuario en registrar una imagen? </p>
+            <% } %>
+            </article>
+        </section>
+
+        <% if(privilegios.indexOf('Pruebas') >= 0) { %>
+            <section>
+                <h1> Prueba 1 </h1>
+                <h3> Promedios </h3>
+                <a href="/pruebas/prueba1"> <button> Test </button> </a>
+            </section>
+
+            <section>
+                <h1> Prueba 2 </h1>
+                <h3> TXT </h3>
+                <a href="/pruebas/prueba2"> <button> Test </button> </a>
+            </section>
+
+            <section>
+                <h1> Prueba 3 </h1>
+                <h3> Detect Capital </h3>
+                <a href="/pruebas/prueba3"> <button> Test </button> </a>
+                <p> 
+                    <a href="https://leetcode.com/problems/detect-capital/" target="_blank"> Reto</a>: 
+                    El uso de letras mayúsculas es correcto si...
+                </p>
+                <ul>
+                    <li> Todas las letras de una palabra son mayúsculas </li>
+                    <li> Ninguna letra en una palabra es mayúscula </li>
+                    <li> La primera letra en una palabra es mayúscula </li>
+                </ul>
+                <p>
+                    El uso correcto puede verse así "EXAMPLE", "a", "Fino" <br>
+                    El uso incorrecto puede verse así "hOLA", "NaN"
+                </p>
+            </section>
+        <% } %>
+
+        <% if(privilegios.indexOf('Form') >= 0) { %>
+            <section>
+                <h1> Form </h1>
+                <h3> POST response </h3>
+                <a href="/form"> <button> Form </button> </a>
+            </section>
+        <% } %>
+
+        <% if(privilegios.indexOf('Info') >= 0) { %>
+            <section>
+                <h1> Q&A </h1>
+                <h3> Labo 11 </h3>
+                <a href="/info"> <button> Description </button> </a>
+            </section>
+        <% } %>
+        
+        <%- include('includes/foot.ejs') %>
