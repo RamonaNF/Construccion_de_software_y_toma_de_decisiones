@@ -65,5 +65,11 @@ Control de acceso basado en roles
 ### Labo 20
 Consultas en SQL
 
+### Labo 21
+SQL con funciones agregadas y sub-consultas
+
+### Labo 22
+Archivos
+
 [^1]: Profesores: Eduardo Daniel Juárez Pineda, Ricardo Cortés Espinosa <br>
       4to semestre FJ2023
