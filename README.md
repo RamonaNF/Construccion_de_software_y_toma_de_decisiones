@@ -10,6 +10,7 @@ Natgas: Proyecto Onyx
 <img src="Extras/Natgas.png"  height="40px"> <br>
 
 ## Trabajo individual
+Repositorio grupal: [Chilaquiles](https://bitbucket.org/ejuarez/chilaquiles/)
 
 ### Labo 01
 Introducción a las aplicaciones web, HTML5 y ciclo de vida de los sistemas de información
@@ -69,7 +70,16 @@ Consultas en SQL
 SQL con funciones agregadas y sub-consultas
 
 ### Labo 22
-Archivos
+Subir y bajar archivos
+
+### Labo 23
+Manipulación de datos usando Stored Procedures
+
+### Labo 24
+AJAX
+
+### LABO 25
+Transacciones
 
 [^1]: Profesores: Eduardo Daniel Juárez Pineda, Ricardo Cortés Espinosa <br>
       4to semestre FJ2023
