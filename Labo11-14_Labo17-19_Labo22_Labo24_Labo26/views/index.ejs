@@ -1,0 +1,165 @@
+<%- include('includes/head.ejs') %>
+
+    <title> Log In </title>
+</head>
+
+        <title> Express </title>
+    </head>
+    <body>
+        <section>
+            <h1> Gallery </h1>
+            <h3> Visitantes </h3>
+            <form action="/gallery" method="POST" enctype="multipart/form-data"> 
+                <label for="imagen"></label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+
+                <br>
+                <input type="submit" name="subir" value="Subir imagen">
+            </form>
+
+            <br>
+            <% if(images.length > 0) { %>
+                <article style="display:flex; overflow-x: scroll; height: 120px;">
+                <% images.forEach((image) => { %>
+                    <img src="uploads/<%= image.img%>" height="100px" alt="<%= image.img%>">
+                <% }) %>
+            <% } else { %>
+                <article>
+                    <p> ¿Serás el primer usuario en registrar una imagen? </p>
+            <% } %>
+            </article>
+        </section>
+
+        <% if(privilegios.indexOf('Pruebas') >= 0) { %>
+            <section>
+                <h1> Prueba 1 </h1>
+                <h3> Promedios </h3>
+                <a href="/pruebas/prueba1"> <button> Test </button> </a>
+            </section>
+
+            <section>
+                <h1> Prueba 2 </h1>
+                <h3> TXT </h3>
+                <a href="/pruebas/prueba2"> <button> Test </button> </a>
+            </section>
+
+            <section>
+                <h1> Prueba 3 </h1>
+                <h3> Detect Capital </h3>
+                <a href="/pruebas/prueba3"> <button> Test </button> </a>
+                <p> 
+                    <a href="https://leetcode.com/problems/detect-capital/" target="_blank"> Reto</a>: 
+                    El uso de letras mayúsculas es correcto si...
+                </p>
+                <ul>
+                    <li> Todas las letras de una palabra son mayúsculas </li>
+                    <li> Ninguna letra en una palabra es mayúscula </li>
+                    <li> La primera letra en una palabra es mayúscula </li>
+                </ul>
+                <p>
+                    El uso correcto puede verse así "EXAMPLE", "a", "Fino" <br>
+                    El uso incorrecto puede verse así "hOLA", "NaN"
+                </p>
+            </section>
+        <% } %>
+
+        <% if(privilegios.indexOf('Form') >= 0) { %>
+            <section>
+                <h1> Form </h1>
+                <h3> POST response </h3>
+                <a href="/form"> <button> Form </button> </a>
+            </section>
+        <% } %>
+
+        <% if(privilegios.indexOf('Info') >= 0) { %>
+            <section>
+                <h1> Q&A </h1>
+                <h3> Labos 11, 12, 13, 17, 18, 19, 24 </h3>
+                <a href="/info"> <button> Description </button> </a>
+            </section>
+        <% } %>
+
+        <section>
+            <h1> Random words </h1>
+            <!--<p> [abrevadero, biorritmo, numerónimo] </p>-->
+            <h3> That contain... </h3>
+            <input type="text" id="searchWrd" name="searchWrd">
+            
+            <div id="result">Chan chan chaaan</div>
+            <script>
+                document.getElementById('searchWrd').onkeyup = () => {
+                    
+                    const char = document.getElementById('searchWrd').value;
+
+                    if (!char) {
+                        document.getElementById('result').innerHTML = "Chan chan chaaan";
+                        return;
+                    }
+
+                    //función que manda la petición asíncrona
+                    fetch('/search/' + char, {
+                        method: 'GET',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        }
+                    }).then((result) => {
+                        return result.json();
+                    })
+                    .then(data => {
+                        //Modificamos el DOM de nuestra página de acuerdo a los datos de la segunda promesa
+                        //console.log(data.words);
+
+                        let result = '[';
+
+                        for(let wrd of data.words){
+                            //console.log(wrd.name);
+                            result += ' ';
+                            result += wrd.name.toString();
+                        }
+                        result += ' ]';
+
+                        document.getElementById('result').innerHTML = result;
+                    }).catch(err => {
+                        console.log(err);
+                    });
+                };
+            </script>
+        </section>
+
+        <section id="NASAimg">
+            <!--<h1>APOD</h1>
+            <h3>NASA API: Astronomy picture of the day</h3>
+            <h6><a href=""></a></h6>
+            <img src="" alt="NASA today's pic">-->
+        </section>
+        
+        <script>
+            window.addEventListener("load", function(event) {
+                let img = "";
+                
+                fetch('/api/nasa', {
+                    method: 'GET',
+                    headers: {
+                        //'Content-Type': 'application/json',
+                    }
+                }).then((result) => {
+                    //console.log('RESULT', result);
+                    return result.json();
+                }).then((data) => {
+                    //console.log('DATA', data.data);
+                    
+                    img += `<h1>APOD <small>Astronomy picture of the day</small></h1>
+                            <h3>NASA API</h3>
+                            <h4><a href="` + data.data.url + `">` + data.data.title + `</a></h4>
+                            <img src="` + data.data.hdurl + `" alt="NASA today's pic" style="width:100%">
+                            <h6>` + data.data.copyright + `</h6>
+                            <p>` + data.data.explanation + `</p>`;
+
+                    document.getElementById('NASAimg').innerHTML = img;
+                }).catch(err => {
+                    console.log(err);
+                });
+            });
+        </script>
+        
+        <%- include('includes/foot.ejs') %>

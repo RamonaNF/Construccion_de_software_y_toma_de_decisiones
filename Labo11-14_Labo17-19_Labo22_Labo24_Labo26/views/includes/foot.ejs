@@ -1,0 +1,19 @@
+        <br>
+
+        <% if(!isLoggedIn) { %>
+            <p> <a href="/login"> Log In </a> </p>
+            <p> <a href="/signup"> Sign Up </a> </p>
+            <p> <a href="/api/google"> Sign In with Google!! </a> </p>
+        <% } else { %>
+            <p> <a href="/home"> Home </a> </p>
+            <p> <a href="/logout"> Log Out </a> </p>
+        <% } %>
+        
+        <footer id="footer"> 
+            <p>
+                Made with <a href="https://code.visualstudio.com/" target="_blank"> Visual Studio Code </a> <br>
+                Ramona NF© 2023 <a href="mailto: a01423596@tec.mx"> a01423596@tec.mx </a>
+            </p>
+        </footer>
+    </body>
+</html>

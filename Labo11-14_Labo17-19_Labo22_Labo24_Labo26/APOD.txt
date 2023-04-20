@@ -1,0 +1,10 @@
+APOD
+    https://apod.nasa.gov/apod/astropix.html
+
+USAGE
+    https://wilsjame.github.io/how-to-nasa/
+
+    API KEY
+        https://api.nasa.gov/index.html
+        [ https://api.nasa.gov/planetary/apod?api_key= ]
+  

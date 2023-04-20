@@ -81,5 +81,8 @@ AJAX
 ### LABO 25
 Transacciones
 
+### LABO 26
+Servicios web
+
 [^1]: Profesores: Eduardo Daniel Juárez Pineda, Ricardo Cortés Espinosa <br>
       4to semestre FJ2023

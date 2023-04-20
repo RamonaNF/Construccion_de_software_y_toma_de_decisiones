@@ -1,0 +1,72 @@
+Servicio de telecable
+Depto de cobros
+
+Representación de los pagos de servicios mensuales de sus contratantes:
+Servicios(cliente, domicilio y estado , año, rentabasica 1, servicios adicionales 1, 
+            rentabasica 2, servicios adicionales 2, rentabasica 3, servicios adicionales 3, 
+            .... rentabasica 12, servicios adicionales 12)
+
+1FN: Celdas con valores atómicos
+Servicios(cliente, domicilio, estado , año, mes, rentabasica, servicios adicionales)
+
+2FN: Llaves que garanticen unicidad
+3FN: Entidades necesarias para que todos los atributos estén contemplados
+Estado(idEstado)
+Cliente(idCliente, name, domicilio, idEstado)
+Servicios(idServicio, idCliente, año, mes, rentabasica, serviciosAdicionales)
+
+-----------------------------------------------------------------------------------------------------------------
+
+Empresa de manufactura
+Controla su producción
+
+Producción (Código de parte, Descripción de parte, Fecha,
+No. de operador, nombre del operador y cantidad producida en Línea 1 Turno 1,
+No. de operador, nombre del operador y cantidad producida en Línea 1 Turno 2,
+No. de operador, nombre del operador y cantidad producida en Línea 1 Turno 3,
+No. de operador, nombre del operador y cantidad producida en Línea 2 Turno 1,
+No. de operador, nombre del operador y cantidad producida en Línea 2 Turno 2,
+No. de operador, nombre del operador y cantidad producida en Línea 2 Turno 3,
+No. de operador, nombre del operador y cantidad producida en Línea 3 Turno 1,
+No. de operador, nombre del operador y cantidad producida en Línea 3 Turno 2,
+No. de operador, nombre del operador y cantidad producida en Línea 3 Turno 3)
+
+1FN: Celdas con valores atómicos
+Producción (Código de parte, Descripción de parte, año, mes, día,
+No. de operador, nombre del operador, cantidad producida, Línea, Turno)
+
+2FN: Llaves que garanticen unicidad
+3FN: Entidades necesarias para que todos los atributos estén contemplados
+Parte(codigoParte, descripcion)
+Operador(noOperador, nombre)
+Produccion(noOperador, codigoParte, idLinea, idTurno, fecha, cantidad)
+Linea(idLinea, descripcion)
+Turno(idTurno, nombre, horasInicio, horasFin)
+
+-----------------------------------------------------------------------------------------------------------------
+
+Empresa de telefonía 
+Facturación de sus servicios
+
+Facturación (Nombre del cliente y  Dirección , Fecha y  Hora, Duración,
+Número de teléfono de origen, Entidad federativa de origen, Ciudad de origen,
+Número de teléfono de destino, Entidad federativa de destino, Ciudad de destino,
+Tarifa por minuto entre ciudad de origen y ciudad de destino,
+Fecha de inicio del período de facturación,
+Fecha final del período de facturación)
+
+1FN: Celdas con valores atómicos
+Facturación (Nombre del cliente, dirección , Fecha, Hora, Duración,
+Número de teléfono de origen, Entidad federativa de origen, Ciudad de origen,
+Número de teléfono de destino, Entidad federativa de destino, Ciudad de destino,
+Tarifa por minuto entre ciudad de origen y ciudad de destino,
+Fecha de inicio del período de facturación,
+Fecha final del período de facturación)
+
+2FN: Llaves que garanticen unicidad
+3FN: Entidades necesarias para que todos los atributos estén contemplados
+Cliente(idCliente, nombre, direccion, telefono, ciudad, entidad)
+LLamada(idLlamada, duracion, fecha, hora, *idClienteDestino, idClienteOrigen*)
+Facturacion(idFacturacion, *idLlamada*, inicioPeriodo, finPeriodo)
+Tarifas(idCiudadOrigen, idCiudadDestino, tarifaPorMinuto)
+Ciudad(idCiudad, nombre)
